@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" onclick="showPage('home')"  style="font-family: 'Edwardian Script ITC', cursive; font-size: 3rem; font-weight: 400; color: #e3d5c8;">Latte & Letters</a>
+            <nav>
+    <button onclick="window.location.href='index.html'" id="nav-home" class="active">Home</button>
+    <button onclick="window.location.href='coffee.html'" id="nav-home" class="active">Coffee</button>
+    <button onclick="window.location.href='tea.html'" id="nav-home" class="active">Tea</button>
+    <button onclick="window.location.href='bakery.html'" id="nav-home" class="active">Bakery</button>
+    <button onclick="window.location.href='contact.html'" id="nav-home" class="active">Contact Us</button>
+    </nav>
+</nav>
+        </div>
+    </header>
+    <main>
+            <h2 style="font-family: 'Lucida Calligraphy', cursive; font-size: 2.5rem; font-weight: 400;">Coffee</h2>
+            <p class="section-desc">Rich, aromatic brews prepared by expert baristas.</p>
+ <div class="home-image">
+                    <img src="https://images.unsplash.com/photo-1760175445000-0e01e193d1cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Cafe">
+                </div> 
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div>
+                        <div class="menu-header">
+                            <span class="menu-title">Classic Espresso</span>
+                            <span class="menu-price">₹160</span>
+                        </div>
+                        <p class="menu-desc">Strong, bold single or double shot of pure roasted espresso.</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="orderItem('Classic Espresso')">Order Online</button>
+                </div>
+                <div class="menu-card">
+                    <div>
+                        <div class="menu-header">
+                            <span class="menu-title">Signature Caffe Latte</span>
+                            <span class="menu-price">₹220</span>
+                        </div>
+                        <p class="menu-desc">Smooth espresso with velvety steamed milk and light microfoam.</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="orderItem('Signature Caffe Latte')">Order Online</button>
+                </div>
+                <div class="menu-card">
+                    <div>
+                        <div class="menu-header">
+                            <span class="menu-title">Vanilla Cappuccino</span>
+                            <span class="menu-price">₹240</span>
+                        </div>
+                        <p class="menu-desc">Equal parts espresso, milk, and thick foam infused with vanilla.</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="orderItem('Vanilla Cappuccino')">Order Online</button>
+                </div>
+                <div class="menu-card">
+                    <div>
+                        <div class="menu-header">
+                            <span class="menu-title">Caramel Macchiato</span>
+                            <span class="menu-price">₹260</span>
+                        </div>
+                        <p class="menu-desc">Steamed milk with vanilla syrup, marked with espresso and caramel.</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="orderItem('Caramel Macchiato')">Order Online</button>
+                </div>
+                <div class="menu-card">
+                    <div>
+                        <div class="menu-header">
+                            <span class="menu-title">Hazelnut Cold Brew</span>
+                            <span class="menu-price">₹250</span>
+                        </div>
+                        <p class="menu-desc">Steeped for 18 hours, served chilled with toasted hazelnut notes.</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="orderItem('Hazelnut Cold Brew')">Order Online</button>
+                </div>
+                <div class="menu-card">
+                    <div>
+                        <div class="menu-header">
+                            <span class="menu-title">Chocolate Mocha</span>
+                            <span class="menu-price">₹270</span>
+                        </div>
+                        <p class="menu-desc">Rich dark chocolate syrup blended with espresso and warm milk.</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="orderItem('Chocolate Mocha')">Order Online</button>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Latte & Letters. All rights reserved.
+            </div>
+            </main>
+        <script src="script.js"></script>
+</body>
+</html>
