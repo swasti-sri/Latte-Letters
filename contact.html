@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" onclick="showPage('home')" style="font-family: 'Edwardian Script ITC', cursive; font-size: 3rem; font-weight: 400; color: #e3d5c8;">Latte & Letters</a>
+            <nav>
+    <button onclick="window.location.href='index.html'" id="nav-home" class="active">Home</button>
+    <button onclick="window.location.href='coffee.html'" id="nav-home" class="active">Coffee</button>
+    <button onclick="window.location.href='tea.html'" id="nav-home" class="active">Tea</button>
+    <button onclick="window.location.href='bakery.html'" id="nav-home" class="active">Bakery</button>
+    <button onclick="window.location.href='contact.html'" id="nav-home" class="active">Contact Us</button>
+    </nav>
+</nav>
+        </div>
+    </header>
+    <main>
+            <h2 style="font-family: 'Lucida Calligraphy', cursive; font-size: 2.5rem; font-weight: 400;">Contact & Order Online</h2>
+            <p class="section-desc">Visit our cafe or place an online delivery order.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Cafe Details</h3>
+                    <div class="info-row">
+                        <strong>Address:</strong> 42, Booklover's Lane, Near Central Library, City Center
+                    </div>
+                    <div class="info-row">
+                        <strong>Phone:</strong> +91 98765 43210 / 011-23456789
+                    </div>
+                    <div class="info-row">
+                        <strong>Email:</strong> hello@latteandletters.com
+                    </div>
+                    <div class="info-row">
+                        <strong>Timing:</strong> Monday – Sunday: 8:00 AM – 10:00 PM
+                    </div>
+                    <div class="info-row">
+                        <strong>Instagram:</strong> @latte&letters
+                    </div>
+                </div>
+                <div class="order-form-box">
+                    <h3>Place Delivery Order</h3>
+                    <form id="deliveryForm" onsubmit="submitOrder(event)">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" id="userName" required placeholder="Aarav Sharma">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" id="userPhone" required placeholder="9876543210">
+                        </div>
+                        <div class="form-group">
+                            <label>Delivery Address</label>
+                            <textarea id="userAddress" rows="2" required placeholder="House No, Street, Landmark"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Item Name / Combo</label>
+                            <input type="text" id="userItem" required placeholder="e.g. Signature Caffe Latte">
+                        </div>
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="number" id="userQty" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Submit Order</button>
+                    </form>
+                    <div id="successBox" class="success-message">
+                        <strong>🎉 Order Placed Successfully!</strong>
+                        <p style="font-size: 13px; margin-top: 5px;">Thank you! Our delivery rider is on the way with your order.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Latte & Letters. All rights reserved.
+            </div>
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>
